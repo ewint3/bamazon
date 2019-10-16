@@ -15,3 +15,10 @@ var connection = mysql.createConnection({
   password: "iluvbama79",
   database: "bamazon_db"
 });
+
+  connection.connect(function(err) {
+  if (err) throw err;
+  runSearch();
+});
+
+
