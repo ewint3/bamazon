@@ -1,4 +1,6 @@
 const mysql = require("mysql")
+const inquirer = require("inquirer")
+
 
 
 // create the connection information for the sql database
@@ -11,7 +13,7 @@ const connection = mysql.createConnection({
 
     // Your password
     password: "iluvbama79",
-    database: "bamazon_db"
+    database: "bamazon"
 });
 
 // connect to the mysql server and sql database
